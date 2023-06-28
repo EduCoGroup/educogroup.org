@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'RalewayBold';
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: white;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 100% / 9px;
+  }
+  
+  @font-face {
+    font-family: 'RalewayMedium';
+    src: url('../images/Raleway-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'RalewaySemiBold';
+    src: url('../images/Raleway-SemiBold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'RalewayBold';
+    src: url('../images/Raleway-Bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Grotesk';
+    src: url('../images/Grotesk.ttf') format('truetype');
+  }
