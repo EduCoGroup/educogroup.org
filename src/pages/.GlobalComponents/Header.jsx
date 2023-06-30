@@ -78,7 +78,7 @@ export default function Header() {
                     </div>
                     ) : (
                     <div id='HeaderButtonContainer'>
-                        <Link id='HeaderButton' to='/educonetwork'>Access Educo Network</Link>
+                        <Link id='NetworkButton' to='/educonetwork'>Access Educo Network</Link>
                         <div id='HeaderButton' onClick={toggleMenu}>Classes</div>
                         <div id="HeaderMenuContainer" style={{ display: menu ? "flex" : "none" }}>
                         <ul id='HeaderMenu'>
@@ -110,6 +110,8 @@ export default function Header() {
                 justify-content: center;
                 align-items: center;
                 animation: rollout 0.3s ease-in-out;
+                user-select: none;
+                z-index: 3;
             }
 
             #HeaderContainer {
@@ -120,15 +122,12 @@ export default function Header() {
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                border: 1px solid blue;
             }
 
             #HeaderLogoContainer {
                 display: flex;
                 position: relative;
                 height: 90%;
-                border: 1px solid red;
-                background-color: black;
             }
 
             #HeaderLogo {
@@ -150,13 +149,15 @@ export default function Header() {
                 font-size: 70px;
                 z-index: 3;
                 animation: rollin 0.7s ease-in-out;
+                cursor: pointer;
             }
 
             #MobileMenuButton {
                 display: flex;
                 position: relative;
-                color: black;
+                color: white;
                 font-size: 50px;
+                cursor: pointer;
                 z-index: 3;
             }
 
@@ -283,18 +284,17 @@ export default function Header() {
             #HeaderButtonContainer {
                 display: flex;
                 position: relative;
-                width: 45%;
+                width: 40%;
                 height: 100%;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                border: 1px solid red;
             }
 
-            #HeaderButton {
+            #HeaderButton, #NetworkButton {
                 display: flex;
                 position: relative;
-                width: 48%;
+                width: 50%;
                 height: 35%;
                 color: black;
                 background-color: #F8C761;
@@ -309,7 +309,11 @@ export default function Header() {
                 border-radius: 5px;
             }
 
-            #HeaderButton:hover {
+            #NetworkButton{
+                width: 40%;
+            }
+
+            #HeaderButton:hover, #NetworkButton:hover {
                 opacity: 0.8;
             }
 
@@ -325,7 +329,7 @@ export default function Header() {
                 position: absolute;
                 top: 80%;
                 right: 0;
-                width: 48%;
+                width: 50%;
                 height: 350px;
                 flex-direction: column;
                 justify-content: center;
