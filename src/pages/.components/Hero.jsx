@@ -3,18 +3,24 @@ import { Link } from "gatsby";
 
 export default function Hero() {
 
-    const backgroundImg = 'https://images.squarespace-cdn.com/content/v1/61e9dea61f8c8266f9aac812/0fd12780-776e-43c6-8de1-1fd8653a7232/shutterstock_1689338029.jpg?format=2500w'
+    const backgroundImg = 'https://ga-website-production-herokuapp-com.global.ssl.fastly.net/packs/media/assets/images/home/hero-96e8680a0a0fbd88fdc3893e39fbb464.webp'
 
     return (
         <div id="Hero">
             <div id="HeroContainer">
                 <img id='HeroImage' src={backgroundImg}/>
-                <div id='InvisibleMarginOOOoOOooO'></div>
                 <div id='HeroTextContainer'>
                     <p id='HeroHeader'>We help professionals meet their career goals</p>
                     <p id='HeroSubHeader'>Enhance Your Skills</p>
-                    <p id='HeroSubText'>We’ll Show You How</p>
-                    <Link id='HeroButton'>Meet an Advisor</Link>
+                </div>
+                <div id='BrowseCoursesContainer'>
+                    <div id="BrowseCourses">
+                        <div id="BroswseCoursesTextContainer">
+                            <div id="Top"><p id="BrowseCoursesHeader">Browse Courses</p></div>
+                            <div id="Bottom"><p id="BrowseCoursesParagraph">Explore our courses and find the right one for you.</p></div>
+                        </div>
+                        <Link id="BrowseCoursesButton" to='/courses'>Broswe Courses</Link>  
+                    </div>
                 </div>
             </div>
         <style>
@@ -23,7 +29,8 @@ export default function Hero() {
                 display: flex;
                 position: relative;
                 width: 100%;
-                height: 100vh;
+                height: 60vh;
+                margin-top: 55px;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
@@ -46,12 +53,6 @@ export default function Hero() {
                 object-fit: cover;
                 overflow: hidden;
             }
-            #InvisibleMarginOOOoOOooO {
-                display: flex;
-                position: relative;
-                width: 100%;
-                height: 50%;
-            }
             #HeroTextContainer {
                 display: flex;
                 position: relative;
@@ -62,7 +63,7 @@ export default function Hero() {
                 align-items: center;
                 text-align: center;
             }
-            #HeroHeader, #HeroSubHeader, #HeroSubText, #HeroButton {
+            #HeroHeader, #HeroSubHeader {
                 display: flex;
                 position: relative;
                 width: 90%;
@@ -74,27 +75,65 @@ export default function Hero() {
             #HeroSubHeader {
                 font-size: 35px;
             }
-            #HeroSubText {
-                font-size: 20px;
-            }
-            #HeroButton {
+            #BrowseCoursesContainer {
                 display: flex;
                 position: relative;
-                width: 250px;
-                height: 15%;
-                margin-top: 1%;
+                width: 100%;
+                height: 50%;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid red;
+            }
+            #BrowseCourses {
+                display: flex;
+                position: absolute;
+                width: 80%;
+                height: 100%;
+                bottom: -10%;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                padding-left: 5%;
+                background-color: white;
+                border: 1px solid black;
+            }
+            #BroswseCoursesTextContainer {
+                display: flex;
+                position: relative;
+                width: 70%;
+                height: 50%;
+                margin-top: -1%;
+                margin-bottom: 1%;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            #Top, #Bottom {
+                display: flex;
+                position: relative;
+                height: 50%;
+            }
+            #BrowseCoursesHeader {
+                font-size: 25px;
+            }
+            #BrowseCoursesParagraph {
+                font-size: 20px;
+                font-family: 'RalewayMedium';
+            }
+            #BrowseCoursesButton {
+                display: flex;
+                position: relative;
+                width: 200px;
+                height: 60px;
+                background-color: red;
                 justify-content: center;
                 align-items: center;
                 font-size: 18px;
-                color: black;
-                background-color: #F8C761;
+                color: white;
                 border-radius: 5px;
-                border: 1px solid black;
-                font-family: 'Grotesk';
+                text-decoration: underline;
+                text-decoration-color: red;
                 cursor: pointer;
-            }
-            #HeroButton:hover {
-                opacity: 0.8;
             }
             @media (max-width: 980px) {
                 #HeroHeader {
@@ -111,7 +150,7 @@ export default function Hero() {
                 #HeroSubHeader {
                     font-size: 30px;
                 }
-                #HeroSubText {
+                #BrowseCoursesParagraph {
                     font-size: 15px;
                 }
             }
