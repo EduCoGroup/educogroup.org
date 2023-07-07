@@ -15,6 +15,14 @@ export default function Header() {
       setMenu(!menu);
     };
 
+    const openMenu = () => {
+        setMenu(true);
+    }
+
+    const closeMenu = () => {
+        setMenu(false);
+    }
+
     const toggleMobileMenu = () => {
         setMobileMenu(!mobileMenu);
         setClose(!close);
@@ -78,22 +86,23 @@ export default function Header() {
                     </div>
                     ) : (
                     <div id='HeaderButtonContainer'>
-                        <Link id='NetworkButton' to='/educonetwork'>Access Educo Network</Link>
-                        <div id='HeaderButton' onClick={toggleMenu}>Classes</div>
-                        <div id="HeaderMenuContainer" style={{ display: menu ? "flex" : "none" }}>
-                        <ul id='HeaderMenu'>
-                            <li id='MenuItem'><Link id='MenuLink' to='/BackEndDev'>Back End Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/FrontEndDev'>Front End Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/FullStackDev'>Full Stack Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/EarlyEngineering'>Early Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/DataEngineering'>Data Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/SecurityEngineering'>Security Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/CloudEngineering'>Cloud Engineering Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/DataAnalyst'>Data/Business Analyst Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/DataScience'>Data Science Class</Link></li>
-                            <li id='MenuItem'><Link id='MenuLink' to='/CyberSecurity'>Cyber Security Class</Link></li>
-                        </ul>
+                        <div id='HeaderButton' onMouseOver={openMenu} onMouseOut={closeMenu}>Classes
+                            <div id="HeaderMenuContainer" style={{ display: menu ? "flex" : "none" }}>
+                                <ul id='HeaderMenu'>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/BackEndDev'>Back End Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/FrontEndDev'>Front End Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/FullStackDev'>Full Stack Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/EarlyEngineering'>Early Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/DataEngineering'>Data Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/SecurityEngineering'>Security Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/CloudEngineering'>Cloud Engineering Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/DataAnalyst'>Data/Business Analyst Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/DataScience'>Data Science Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='/CyberSecurity'>Cyber Security Class</Link></li>
+                                </ul>
+                            </div>
                         </div>
+                        <Link id='NetworkButton' to='/educonetwork'>Access Educo Network</Link>
                     </div>
                     )}
             </div>
@@ -105,10 +114,11 @@ export default function Header() {
                 top: 0;
                 left: 0;
                 width: 100vw;
-                height: 20vh;
+                height: 55px;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                background-color: black;
                 animation: rollout 0.3s ease-in-out;
                 user-select: none;
                 z-index: 3;
@@ -127,7 +137,7 @@ export default function Header() {
             #HeaderLogoContainer {
                 display: flex;
                 position: relative;
-                height: 90%;
+                height: 99%;
             }
 
             #HeaderLogo {
@@ -146,6 +156,7 @@ export default function Header() {
                 display: flex;
                 position: relative;
                 color: black;
+                margin-top: 50%;
                 font-size: 70px;
                 z-index: 3;
                 animation: rollin 0.7s ease-in-out;
@@ -156,7 +167,7 @@ export default function Header() {
                 display: flex;
                 position: relative;
                 color: white;
-                font-size: 50px;
+                font-size: 35px;
                 cursor: pointer;
                 z-index: 3;
             }
@@ -168,7 +179,7 @@ export default function Header() {
             #MobileMenuContainer {
                 display: flex;
                 position: absolute;
-                top: -6vh;
+                top: 0;
                 right: -2.5vw;
                 width: 99.8vw;
                 height: 100vh;
@@ -294,12 +305,11 @@ export default function Header() {
             #HeaderButton, #NetworkButton {
                 display: flex;
                 position: relative;
-                width: 50%;
-                height: 35%;
-                color: black;
-                background-color: #F8C761;
+                width: 60%;
+                height: 85%;
+                color: white;
                 text-decoration: underline;
-                text-decoration-color: #F8C761;
+                text-decoration-color: black;
                 font-size: 16px;
                 justify-content: center;
                 align-items: center;
@@ -313,10 +323,6 @@ export default function Header() {
                 width: 40%;
             }
 
-            #HeaderButton:hover, #NetworkButton:hover {
-                opacity: 0.8;
-            }
-
             #Link {
                 display: flex;
                 position: relative;
@@ -327,9 +333,9 @@ export default function Header() {
 
             #HeaderMenuContainer {
                 position: absolute;
-                top: 80%;
-                right: 0;
-                width: 50%;
+                top: 100%;
+                left: 0;
+                width: 100%;
                 height: 350px;
                 flex-direction: column;
                 justify-content: center;
