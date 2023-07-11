@@ -21,6 +21,13 @@ export default function Hero() {
                         </div>
                         <Link id="BrowseCoursesButton" to='/courses'>Broswe Courses</Link>  
                     </div>
+                    <div id="BrowseHealth">
+                        <div id="BroswseHealthTextContainer">
+                            <div id="Top"><p id="BrowseHealthHeader">Browse Health</p></div>
+                            <div id="Bottom"><p id="BrowseHealthParagraph">Explore our Health and find the right one for you.</p></div>
+                        </div>
+                        <Link id="BrowseHealthButton" to='/Health'>Broswe Health</Link>  
+                    </div>
                 </div>
             </div>
         <style>
@@ -80,24 +87,24 @@ export default function Hero() {
                 position: relative;
                 width: 100%;
                 height: 50%;
+                gap: 5%;
                 justify-content: center;
-                align-items: center;
-                border: 1px solid red;
+                align-items: space-around;
             }
-            #BrowseCourses {
+            #BrowseCourses, #BrowseHealth {
                 display: flex;
-                position: absolute;
-                width: 80%;
+                position: relative;
+                width: 40%;
                 height: 100%;
                 bottom: -10%;
                 justify-content: center;
                 align-items: flex-start;
                 flex-direction: column;
-                padding-left: 5%;
+                padding-left: 3%;
                 background-color: white;
                 border: 1px solid black;
             }
-            #BroswseCoursesTextContainer {
+            #BroswseCoursesTextContainer, #BroswseHealthTextContainer {
                 display: flex;
                 position: relative;
                 width: 70%;
@@ -112,15 +119,19 @@ export default function Hero() {
                 display: flex;
                 position: relative;
                 height: 50%;
+                margin-top: -4%;
             }
-            #BrowseCoursesHeader {
+            #Top {
+                margin-top: -7%;
+            }
+            #BrowseCoursesHeader, #BrowseHealthHeader {
                 font-size: 25px;
             }
-            #BrowseCoursesParagraph {
+            #BrowseCoursesParagraph, #BrowseHealthParagraph {
                 font-size: 20px;
                 font-family: 'RalewayMedium';
             }
-            #BrowseCoursesButton {
+            #BrowseCoursesButton, #BrowseHealthButton {
                 display: flex;
                 position: relative;
                 width: 200px;
@@ -143,15 +154,29 @@ export default function Hero() {
             }
             @media (max-width: 550px) {
                 #HeroHeader {
-                    font-size: 35px;
-                    margin-top: -10%;
-                    margin-bottom: 25%;
+                    font-size: 30px;
+                    margin-bottom: 15%;
                 }
                 #HeroSubHeader {
-                    font-size: 30px;
+                    font-size: 25px;
                 }
-                #BrowseCoursesParagraph {
+                #BrowseCoursesContainer {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                #BrowseCourses, #BrowseHealth {
+                    width: 80%;
+                }
+                #BrowseCoursesParagraph, #BrowseHealthParagraph {
                     font-size: 15px;
+                }
+                #BrowseCoursesButton, #BrowseHealthButton {
+                    width: 140px;
+                    height: 40px;
+                    font-size: 15px;
+                }
+                #Top, #Bottom {
+                    margin-bottom: 5%;
                 }
             }
         `}
