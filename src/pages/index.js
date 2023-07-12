@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./.GlobalComponents/Header"
-import Hero from "./.components/Hero"
-import Features from "./.components/Features"
-import Courses from "./.components/Courses"
-import Results from "./.components/Results"
-import Contact from "./.components/Contact"
-import Footer from "./.GlobalComponents/Footer"
-import "./index.css"
+import Header from "../.GlobalComponents/Header";
+import Hero from "../.components/Hero";
+import Courses from "../.components/Courses";
+import Paths from "../.components/Paths";
+import Events from "../.components/Events";
+import Contact from "../.components/Contact";
+import Footer from "../.GlobalComponents/Footer";
+import "./index.css";
 
 export default function Index() {
 
@@ -14,9 +14,9 @@ export default function Index() {
         <div id="Home">
             <Header />
             <Hero />
-            <Features />
             <Courses />
-            <Results />
+            <Paths />
+            <Events />
             <Contact />
             <Footer />
         </div>
