@@ -102,6 +102,7 @@ export default function Hero() {
                 flex-direction: column;
                 padding-left: 3%;
                 background-color: white;
+                z-index: 3;
                 border: 1px solid black;
             }
             #BroswseCoursesTextContainer, #BroswseHealthTextContainer {
@@ -152,7 +153,7 @@ export default function Hero() {
                     margin-bottom: 10%;
                 }
             }
-            @media (max-width: 550px) {
+            @media (max-width: 890px) {
                 #HeroHeader {
                     font-size: 30px;
                     margin-bottom: 15%;
