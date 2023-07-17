@@ -66,16 +66,14 @@ export default function Header() {
                                         <p id='MobileClassesText'>Classes</p>
                                     </div>
                                     <ul id='MobileHeaderMenu'>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/backend-dev'>Back End Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/frontend-dev'>Front End Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/fullstack-dev'>Full Stack Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/early-engineering'>Early Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/data-engineering'>Data Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/security-engineering'>Security Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/cloud-engineering'>Cloud Engineering Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/data-analyst'>Data/Business Analyst Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/data-science'>Data Science Class</Link></li>
-                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='/cyber-security'>Cyber Security Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31500319'>Back End Engineering Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31503037'>Front End Engineering Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31502733'>Full Stack Engineering Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31503429'>Data Engineering Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31495102'>Cloud Engineering Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31503659'>Data Science Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/31504199'>Cyber Security Class</Link></li>
+                                        <li id='MobileMenuItem'><Link id='MobileMenuLink' to='https://www.educogrouppaths.org/posts/36325449'>UI/UX Design Class</Link></li>
                                     </ul>
                                 </div>
                                 <div id='MobileNetworkButtonContainer'>
@@ -89,16 +87,14 @@ export default function Header() {
                         <div id='HeaderButton' onMouseOver={openMenu} onMouseOut={closeMenu}>Classes
                             <div id="HeaderMenuContainer" style={{ display: menu ? "flex" : "none" }}>
                                 <ul id='HeaderMenu'>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/backend-dev'>Back End Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/frontend-dev'>Front End Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/fullstack-dev'>Full Stack Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/early-engineering'>Early Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/data-engineering'>Data Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/security-engineering'>Security Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/cloud-engineering'>Cloud Engineering Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/data-analyst'>Data/Business Analyst Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/data-science'>Data Science Class</Link></li>
-                                    <li id='MenuItem'><Link id='MenuLink' to='/cyber-security'>Cyber Security Class</Link></li>
+                                    <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31500319'>Back End Engineering Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31503037'>Front End Engineering Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31502733'>Full Stack Engineering Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31503429'>Data Engineering Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31495102'>Cloud Engineering Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31503659'>Data Science Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/31504199'>Cyber Security Class</Link></li>
+                                        <li id='MenuItem'><Link id='MenuLink' to='https://www.educogrouppaths.org/posts/36325449'>UI/UX Design Class</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -121,7 +117,7 @@ export default function Header() {
                 background-color: black;
                 animation: rollout 0.3s ease-in-out;
                 user-select: none;
-                z-index: 3;
+                z-index: 4;
             }
 
             #HeaderContainer {
@@ -306,7 +302,7 @@ export default function Header() {
                 display: flex;
                 position: relative;
                 width: 60%;
-                height: 85%;
+                height: 100%;
                 color: white;
                 text-decoration: underline;
                 text-decoration-color: black;
@@ -336,7 +332,7 @@ export default function Header() {
                 top: 100%;
                 left: 0;
                 width: 100%;
-                height: 350px;
+                height: 330px;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
