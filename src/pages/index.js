@@ -9,7 +9,6 @@ import Footer from "../.GlobalComponents/Footer";
 import "./index.css";
 
 export default function Index() {
-
     return (
         <div id="Home">
             <Header />
