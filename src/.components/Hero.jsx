@@ -19,14 +19,14 @@ export default function Hero() {
                             <div id="Top"><p id="BrowseCoursesHeader">Browse Courses</p></div>
                             <div id="Bottom"><p id="BrowseCoursesParagraph">Explore our courses and find the right one for you.</p></div>
                         </div>
-                        <Link id="BrowseCoursesButton" to='/courses'>Broswe Courses</Link>  
+                        <Link id="BrowseCoursesButton" to='https://www.educogrouppaths.org/collections/41010'>Explore Courses</Link>  
                     </div>
                     <div id="BrowseHealth">
                         <div id="BroswseHealthTextContainer">
-                            <div id="Top"><p id="BrowseHealthHeader">Browse Health</p></div>
-                            <div id="Bottom"><p id="BrowseHealthParagraph">Explore our Health and find the right one for you.</p></div>
+                            <div id="Top"><p id="BrowseHealthHeader">Explore Well-Being</p></div>
+                            <div id="Bottom"><p id="BrowseHealthParagraph">Explore our Health and Wellness.</p></div>
                         </div>
-                        <Link id="BrowseHealthButton" to='/Health'>Broswe Health</Link>  
+                        <Link id="BrowseHealthButton" to='https://www.educogrouppaths.org/collections/1019280'>Explore Well-Being</Link>  
                     </div>
                 </div>
             </div>
@@ -37,7 +37,7 @@ export default function Hero() {
                 position: relative;
                 width: 100%;
                 height: 60vh;
-                margin-top: 55px;
+                margin-top: 50px;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
@@ -55,7 +55,7 @@ export default function Hero() {
             #HeroImage {
                 position: absolute;
                 width: 100%;
-                height: 100%;
+                height: 150%;
                 filter: brightness(0.4);
                 object-fit: cover;
                 overflow: hidden;
@@ -102,13 +102,14 @@ export default function Hero() {
                 flex-direction: column;
                 padding-left: 3%;
                 background-color: white;
-                z-index: 3;
                 border: 1px solid black;
+                color: black;
+                z-index: 3;
             }
             #BroswseCoursesTextContainer, #BroswseHealthTextContainer {
                 display: flex;
                 position: relative;
-                width: 70%;
+                width: 80%;
                 height: 50%;
                 margin-top: -1%;
                 margin-bottom: 1%;
@@ -123,7 +124,8 @@ export default function Hero() {
                 margin-top: -4%;
             }
             #Top {
-                margin-top: -7%;
+                margin-top: -5%;
+                margin-bottom: 3%;
             }
             #BrowseCoursesHeader, #BrowseHealthHeader {
                 font-size: 25px;
@@ -137,14 +139,14 @@ export default function Hero() {
                 position: relative;
                 width: 200px;
                 height: 60px;
-                background-color: red;
+                background-color: #F8C761;
                 justify-content: center;
                 align-items: center;
                 font-size: 18px;
-                color: white;
+                color: black;
                 border-radius: 5px;
                 text-decoration: underline;
-                text-decoration-color: red;
+                text-decoration-color: #F8C761;
                 cursor: pointer;
             }
             @media (max-width: 980px) {
@@ -168,17 +170,23 @@ export default function Hero() {
                 #BrowseCourses, #BrowseHealth {
                     width: 80%;
                 }
+                #BrowseCoursesHeader, #BrowseHealthHeader {
+                    font-size: 20px;
+                }
                 #BrowseCoursesParagraph, #BrowseHealthParagraph {
                     font-size: 15px;
                 }
                 #BrowseCoursesButton, #BrowseHealthButton {
                     width: 140px;
                     height: 40px;
-                    font-size: 15px;
+                    font-size: 13px;
                 }
                 #Top, #Bottom {
-                    margin-bottom: 5%;
+                    margin-bottom: 8%;
+                    height: 40%;
+                    width: 100%;
                 }
+                
             }
         `}
         </style>
