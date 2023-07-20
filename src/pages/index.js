@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../.GlobalComponents/Header";
 import Hero from "../.components/Hero";
 import Courses from "../.components/Courses";
-import Paths from "../.components/Paths";
+// import Paths from "../.components/Paths";
 import Events from "../.components/Events";
 import Contact from "../.components/Contact";
 import Footer from "../.GlobalComponents/Footer";
@@ -14,7 +14,7 @@ export default function Index() {
             <Header />
             <Hero />
             <Courses />
-            <Paths />
+            {/* <Paths /> */}
             <Events />
             <Contact />
             <Footer />

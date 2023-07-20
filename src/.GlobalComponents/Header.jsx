@@ -11,10 +11,6 @@ export default function Header() {
     const [showMobile, setShowMobile] = useState(false);
     const [close, setClose] = useState(false);
 
-    const toggleMenu = () => {
-      setMenu(!menu);
-    };
-
     const openMenu = () => {
         setMenu(true);
     }
@@ -77,7 +73,7 @@ export default function Header() {
                                     </ul>
                                 </div>
                                 <div id='MobileNetworkButtonContainer'>
-                                    <Link id='MobileNetworkButton' to='/educo-network'>Access Educo Network</Link>
+                                    <Link id='MobileNetworkButton' to='https://www.educogrouppaths.org/spaces/9309834/feed'>Access Educo Network</Link>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +94,7 @@ export default function Header() {
                                 </ul>
                             </div>
                         </div>
-                        <Link id='NetworkButton' to='/educo-network'>Access Educo Network</Link>
+                        <Link id='NetworkButton' to='https://www.educogrouppaths.org/spaces/9309834/feed'>Access Educo Network</Link>
                     </div>
                     )}
             </div>
@@ -150,9 +146,10 @@ export default function Header() {
 
             #MobileMenuButtonX {
                 display: flex;
-                position: relative;
+                position: fixed;
+                top: 15px;
+                right: 15px;
                 color: black;
-                margin-top: 50%;
                 font-size: 70px;
                 z-index: 3;
                 animation: rollin 0.7s ease-in-out;
@@ -174,10 +171,11 @@ export default function Header() {
 
             #MobileMenuContainer {
                 display: flex;
-                position: absolute;
+                position: fixed;
                 top: 0;
-                right: -2.5vw;
-                width: 99.8vw;
+                left: 0;
+                right: 0;
+                width: 100vw;
                 height: 100vh;
                 flex-direction: column;
                 background-color: white;

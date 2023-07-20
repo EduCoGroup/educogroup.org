@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-gtag",
       options: {
-        trackingIds: `${process.env.REACT_APP_GA_TAG}`, 
+        trackingIds: [`${process.env.REACT_APP_GA_TAG}`], 
         gtagConfig: {
           measurementID: `${process.env.REACT_APP_MEASUREMENT_ID}`,
           anonymize_ip: true,

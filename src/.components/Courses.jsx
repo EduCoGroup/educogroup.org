@@ -74,8 +74,8 @@ export default function Courses() {
                         ))}
                     </div>
                 </div>
-                <div id="CoursesButtonContainer">
-                    <Link id="CoursesButton" to="https://www.educogrouppaths.org/collections/41010" target="blank">Browse All Courses</Link>
+                <div id="BrowseButtonContainer">
+                    <Link id="BrowseButton" to="https://www.educogrouppaths.org/collections/41010" target="blank">Browse All Courses</Link>
                 </div>
             </div>
         <style>
@@ -176,11 +176,27 @@ export default function Courses() {
             #CourseButtonContainer {
                 display: flex;
                 position: relative;
-                width: 220px;
-                height: 60px;
+                width: 170px;
+                height: 50px;
                 margin-bottom: 5%;
             }
-            #CoursesButtonContainer {
+            #CoursesButton {
+                display: flex;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                font-size: 0.9em;
+                cursor: pointer;
+                font-weight: bold;
+                color: black;
+                background-color: #F8C761;
+                border: none;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+            #BrowseButtonContainer {
                 display: flex;
                 position: relative;
                 width: 200px;
@@ -189,7 +205,7 @@ export default function Courses() {
                 justify-content: center;
                 align-items: center;
             }
-            #CoursesButton {
+            #BrowseButton {
                 display: flex;
                 position: relative;
                 width: 100%;
@@ -199,8 +215,8 @@ export default function Courses() {
                 font-size: 1.2em;
                 cursor: pointer;
                 font-weight: bold;
-                color: white;
-                background-color: red;
+                color: black;
+                background-color: #F8C761;
                 border: none;
                 border-radius: 10px;
                 text-decoration: none;
@@ -220,9 +236,19 @@ export default function Courses() {
                     padding-bottom: 5%;
                 }
                 #CoursesListGrid {
-                    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
                     justify-content: center;
                 }
+                #Course {
+                    height: 250px;
+                }
+                #CourseHeader {
+                    font-size: 1.3em;
+                }
+                #CourseDescription {
+                    font-size: 0.8em;
+                }
+
             }
         `}
         </style>
