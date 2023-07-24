@@ -51,7 +51,7 @@ export default function Footer() {
                         <div id='BottomListItem'>© 2023 EduCo Group. All Rights Reserved.</div>
                         <div id='BottomListItem'><Link id='BottomListItemButton' target="blank" to='https://www.educogroup.org/tuitionreimbursement'>Terms & Conditions</Link></div>
                         <div id='BottomListItem'><Link id='BottomListItemButton' target="blank" to='https://www.google.com/maps/dir//Educo+Group+Washington/@38.9984532,-77.0576701,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b7b7dfa5b37ac3:0x63764d60d4bd8b44!2m2!1d-77.0413037!2d38.9207753?entry=ttu'>
-                        2328 Champlain St NW APT 321, Washington, DC 20009</Link></div>
+                        2328 Champlain St NW, Washington, DC 20009</Link></div>
                     </div>
                 </div>
             </div>

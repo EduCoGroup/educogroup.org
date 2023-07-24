@@ -19,14 +19,14 @@ export default function Hero() {
                             <div id="Top"><p id="BrowseCoursesHeader">Browse Courses</p></div>
                             <div id="Bottom"><p id="BrowseCoursesParagraph">Explore our courses and find the right one for you.</p></div>
                         </div>
-                        <Link id="BrowseCoursesButton" to='https://www.educogrouppaths.org/collections/41010'>Explore Courses</Link>  
+                        <Link id="BrowseCoursesButton" to='https://www.educogrouppaths.org/collections/41010' target="blank">Explore Courses</Link>  
                     </div>
                     <div id="BrowseHealth">
                         <div id="BroswseHealthTextContainer">
                             <div id="Top"><p id="BrowseHealthHeader">Explore Well-Being</p></div>
                             <div id="Bottom"><p id="BrowseHealthParagraph">Explore our Health and Wellness.</p></div>
                         </div>
-                        <Link id="BrowseHealthButton" to='https://www.educogrouppaths.org/collections/1019280'>Explore Well-Being</Link>  
+                        <Link id="BrowseHealthButton" to='https://www.educogrouppaths.org/collections/1019280' target="blank">Explore Well-Being</Link>  
                     </div>
                 </div>
             </div>
