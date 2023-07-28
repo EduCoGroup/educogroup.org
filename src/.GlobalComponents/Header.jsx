@@ -199,8 +199,7 @@ export default function Header() {
                 height: 65%;
                 flex-direction: column;
                 justify-content: center;
-                margin-bottom: 10%;
-                border: 1px solid red;
+                margin-bottom: 5%;
             }
 
             #MobileClassesTextContainer {
