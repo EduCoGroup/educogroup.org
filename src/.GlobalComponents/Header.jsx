@@ -129,13 +129,13 @@ export default function Header() {
             #HeaderLogoContainer {
                 display: flex;
                 position: relative;
-                height: 99%;
+                width: 80px;
             }
 
             #HeaderLogo {
                 display: flex;
                 position: relative;
-                width: 100%; 
+                width: 80px; 
                 height: 100%;
             }
 
@@ -199,8 +199,8 @@ export default function Header() {
                 height: 65%;
                 flex-direction: column;
                 justify-content: center;
-                margin-top: 15%;
                 margin-bottom: 10%;
+                border: 1px solid red;
             }
 
             #MobileClassesTextContainer {
