@@ -240,10 +240,13 @@ export default function Courses() {
                     justify-content: center;
                 }
                 #Course {
-                    height: 250px;
+                    height: 260px;
+                }
+                #CourseHeaderContainer {
+                    margin-top: 2px;
                 }
                 #CourseHeader {
-                    font-size: 1.3em;
+                    font-size: 1.25em;
                 }
                 #CourseDescription {
                     font-size: 0.8em;
